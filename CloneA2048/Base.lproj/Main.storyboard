@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KbK-ax-gZq">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Front Page View Controller-->
+        <scene sceneID="Kac-Ob-pSB">
+            <objects>
+                <viewController id="KbK-ax-gZq" customClass="FrontPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFl-T4-eb9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_matreshka_big_frontpage.png" id="TAF-oa-1Oa">
+                                <rect key="frame" x="0.0" y="72" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matryoshka 2048" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xLq-Pp-QHa">
+                                <rect key="frame" x="53" y="400" width="214" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" red="0.96695523648648651" green="0.7084565033783784" blue="0.42781355574324326" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hqF-Rs-B5p">
+                                <rect key="frame" x="136" y="454" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="9Io-aS-eL2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.63921568627450975" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kTQ-Nj-acb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuI-Cu-XWw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="-928"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SgQ-JB-Z93">
+            <objects>
+                <viewController id="MhI-WA-Lke" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AFL-8l-AyO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="BV2-dc-kTF">
+                                <rect key="frame" x="0.0" y="34" width="320" height="490"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.29803921568627451" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.29803921568627451" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DV0-Mm-LOd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdr-dg-rfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="-214"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" userLabel="Root View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="91W-cd-GUk" userLabel="Game Info">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LiR-kB-dX7">
+                                        <rect key="frame" x="94" y="8" width="80" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.074509803921568626" green="0.28235294117647058" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.93725496530532837" green="0.9803922176361084" blue="0.97254908084869385" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JhI-lO-AW5">
+                                        <rect key="frame" x="10" y="8" width="80" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.050980392156862744" green="0.11764705882352941" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.9870429932" blue="0.88604906800000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matreshka_me.png" id="WUl-GR-M7T" userLabel="matreshka_me.png">
+                                        <rect key="frame" x="270" y="154" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matreshka_sister.png" id="P7k-YU-wIL" userLabel="matreshka_sister.png">
+                                        <rect key="frame" x="230" y="144" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matreshka_mama.png" id="bEI-lE-eYh">
+                                        <rect key="frame" x="182" y="134" width="55" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matreshka_papa.png" id="hJY-mn-Xx2">
+                                        <rect key="frame" x="128" y="124" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matreshka_grdmama.png" id="lmh-dQ-4eF">
+                                        <rect key="frame" x="68" y="114" width="75" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Final-Matryoshka-inside-game-S-icon.png" id="JWB-9I-XYf">
+                                        <rect key="frame" x="177" y="8" width="135" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Final-Matryoshka-udid.png" id="YoL-73-mgq">
+                                        <rect key="frame" x="177" y="8" width="136" height="116"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matreshka_grdpapa.png" id="goe-K0-Ma3">
+                                        <rect key="frame" x="8" y="104" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1xq-rU-IjC">
+                                        <rect key="frame" x="94" y="72" width="80" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.62352941176470589" green="0.086274509803921567" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <state key="normal" title="RESET">
+                                            <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Oww-94-PJj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.098039215686274508" green="0.45098039215686275" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="hYS-lq-NaY" customClass="GameBoardView">
+                                <rect key="frame" x="0.0" y="189" width="320" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.29803921568627451" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.51764705882352946" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="bestLabel" destination="LiR-kB-dX7" id="J3V-2Y-tVJ"/>
+                        <outlet property="board" destination="hYS-lq-NaY" id="evY-pe-Bxt"/>
+                        <outlet property="grdmama" destination="lmh-dQ-4eF" id="coz-pA-0g3"/>
+                        <outlet property="grdpapa" destination="goe-K0-Ma3" id="Ex0-oF-7Aa"/>
+                        <outlet property="mama" destination="bEI-lE-eYh" id="A10-Vt-pm1"/>
+                        <outlet property="me" destination="WUl-GR-M7T" id="FDX-ip-cJH"/>
+                        <outlet property="papa" destination="hJY-mn-Xx2" id="0Cj-td-frb"/>
+                        <outlet property="resetButton" destination="1xq-rU-IjC" id="WAf-xB-Haq"/>
+                        <outlet property="scoreLabel" destination="JhI-lO-AW5" id="Aey-81-USG"/>
+                        <outlet property="sister" destination="P7k-YU-wIL" id="JnZ-mp-hjN"/>
+                        <outlet property="udid" destination="YoL-73-mgq" id="mqt-Rd-WhU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="-928"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Final-Matryoshka-inside-game-S-icon.png" width="135" height="115"/>
+        <image name="Final-Matryoshka-udid.png" width="135" height="115"/>
+        <image name="matreshka_grdmama.png" width="85" height="85"/>
+        <image name="matreshka_grdpapa.png" width="100" height="100"/>
+        <image name="matreshka_mama.png" width="55" height="55"/>
+        <image name="matreshka_me.png" width="50" height="50"/>
+        <image name="matreshka_papa.png" width="70" height="70"/>
+        <image name="matreshka_sister.png" width="35" height="35"/>
+        <image name="red_matreshka_big_frontpage.png" width="512" height="512"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
